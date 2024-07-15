@@ -1,0 +1,28 @@
+{% extends 'hotel/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+
+<div id="Login" class="tabcontent">
+    <div class="header">
+      <div class="aspect-ratio-container">
+        <img src="https://transantin.cl/wp-content/uploads/2023/02/vina-del-mar.jpg" alt="Image">
+      </div>
+      <div class="overlay">
+        <h1>HOTEL VERANUM</h1>
+      </div>
+    </div>
+    <div class="container2-wrapper">
+      <div class="container2">
+        <form>
+          <input class="input_login" type="text" id="email" name="email" placeholder="Correo electrónico">
+          <input class="input_login" type="password" id="password" name="password" placeholder="Contraseña">
+          <p>¿Has olvidado tu contraseña?<a href="">Click aquí</a></p>
+          <button class="button" type="submit">Iniciar Sesión</button>
+          <p>¿No tienes una cuenta? <a href="#">Regístrate</a></p>
+        </form>
+      </div>
+    </div>
+</div>
+{% endblock %}
